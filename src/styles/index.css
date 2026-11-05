@@ -1,0 +1,91 @@
+/* Nerfies' original Bulma proportions, typography, and neutral palette. */
+html { scroll-behavior: smooth; scroll-padding-top: 1.5rem; }
+body { font-family: 'Noto Sans', sans-serif; }
+button { font-family: inherit; }
+svg { display: inline-block; width: 1em; height: 1em; vertical-align: -.125em; }
+.icon svg { width: 1em; height: 1em; }
+.nav-center { flex-grow: 1; justify-content: center; }
+.project-nav-label { background: transparent; border: 0; font: inherit; cursor: pointer; }
+.navbar-dropdown.is-open { display: block; }
+.navbar-item.has-dropdown:focus-within .navbar-dropdown { display: block; }
+.skip-link { position: absolute; left: 1rem; top: -4rem; z-index: 50; padding: .75rem; background: #fff; border: 2px solid #209cee; }
+.skip-link:focus { top: .5rem; }
+.publication-title, .publication-authors, .teaser { font-family: 'Google Sans', sans-serif; }
+.publication-title { font-weight: 600; }
+.publication-authors a, .author-name { color: hsl(204, 86%, 53%) !important; }
+.publication-authors a:hover { text-decoration: underline; }
+.author-block { display: inline-block; }
+.author-block + .author-block { margin-left: .2em; }
+.affiliations { margin-top: .35rem; }
+.affiliations .author-block { display: block; margin-left: 0; }
+.publication-venue { font-family: 'Google Sans', sans-serif; margin-top: .5rem; }
+.publication-venue a { color: #555; }
+.publication-venue a:hover { text-decoration: underline; }
+.link-block a { margin: 5px 2px; }
+.arxiv-icon { font-family: Georgia, serif; font-size: 1.35em; font-style: italic; line-height: 1; }
+.teaser .hero-body { padding-top: 0; padding-bottom: 3rem; }
+.teaser-image { width: 100%; height: auto; display: block; }
+.teaser .subtitle { margin: 1.2rem auto 0; }
+.project-name { font-variant: small-caps; }
+.gallery-container { max-width: 1152px; }
+.results-carousel { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; padding: 5px; }
+.figure-preview { display: flex; flex-direction: column; width: 100%; margin: 0; overflow: hidden; border: 1px solid #bbb; border-radius: 10px; padding: 0; background: white; cursor: zoom-in; color: #4a4a4a; }
+.figure-preview img { width: 100%; height: 170px; padding: 12px 8px 0; object-fit: contain; }
+.figure-preview span { width: 100%; font-size: .9rem; padding: .5rem .75rem .75rem; }
+.figure-preview:hover { border-color: #777; }
+.content code { color: #4a4a4a; background: #f5f5f5; }
+.method-columns { margin-top: 1.5rem; }
+.method-columns .column + .column { padding-left: 1.8rem; }
+.math-display { display: block; overflow-x: auto; overflow-y: hidden; padding: .5rem 0; }
+.math-display .katex { font-size: 1.14em; }
+.math-pipeline { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 1rem 2rem; margin: 1.5rem 0; }
+.math-pipeline .katex { font-size: 1.14em; }
+.table-container { overflow-x: auto; margin-top: 1.75rem; }
+.booktabs { width: 100%; border-collapse: collapse; border-top: 2px solid #363636; border-bottom: 2px solid #363636; margin: 0 auto; font-size: .98rem; }
+.booktabs caption { caption-side: bottom; text-align: left; padding-top: .85rem; font-size: .85rem; color: #666; }
+.booktabs thead { border-bottom: 1px solid #363636; }
+.booktabs th, .booktabs td { padding: .5rem 1rem; vertical-align: middle; }
+.booktabs tbody th { font-weight: 400; }
+.booktabs th:first-child { text-align: left; }
+.booktabs th:not(:first-child), .booktabs td { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.booktabs .our-method { border-top: 1px solid #b5b5b5; }
+.booktabs .our-method th, .booktabs .our-method td { font-weight: 700; }
+.results-table { max-width: 760px; }
+.geometry-table { max-width: 600px; }
+.paper-figure { margin: 2rem 0; }
+.paper-figure img { width: 100%; height: auto; }
+figcaption, .figure-caption { margin-top: .8rem; font-size: .85rem; line-height: 1.6; color: #666; }
+.citation-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; gap: 1rem; }
+.citation-header .title { margin: 0; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+.copy-status { min-height: 1.5em; font-size: .85rem; color: #666; }
+.footer-icons { font-size: 25px; }
+.footer-icons a { color: #000; margin: 0 .4rem; }
+.figure-dialog { width: min(1200px, calc(100% - 2rem)); max-height: calc(100dvh - 2rem); border: 0; border-radius: 8px; padding: 1.5rem; color: #4a4a4a; }
+.figure-dialog::backdrop { background: rgb(0 0 0 / 70%); }
+body:has(.figure-dialog[open]) { overflow: hidden; }
+.figure-dialog-header, .figure-dialog-controls { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.figure-dialog-header h2 { font-size: 1.25rem; font-weight: 600; }
+.figure-dialog-content > img { display: block; width: 100%; max-height: 65dvh; object-fit: contain; margin: 1rem 0; }
+.figure-dialog-content > p { font-size: .9rem; margin-bottom: 1rem; }
+.figure-dialog-controls .button { gap: .35rem; }
+.icon-button { display: inline-grid; place-items: center; width: 2rem; height: 2rem; border: 0; background: transparent; cursor: pointer; color: #4a4a4a; font-size: 1.3rem; }
+:focus-visible { outline: 2px solid #209cee; outline-offset: 4px; }
+@media (max-width: 768px) {
+  .publication-title.title { font-size: 2rem; line-height: 1.15; }
+  .title-break { display: none; }
+  .publication-authors.is-size-5 { font-size: 1.1rem !important; }
+  .affiliations .author-block { display: block; }
+  .affiliations .author-block + .author-block { margin-left: 0; }
+  .desktop-break { display: none; }
+  .teaser .subtitle { font-size: 1.1rem; }
+  .results-carousel { grid-template-columns: 1fr; }
+  .figure-preview img { height: 180px; }
+  .method-columns .column + .column { padding-left: .75rem; }
+  .booktabs th, .booktabs td { padding: .5rem .5rem; }
+  .booktabs { font-size: .85rem; }
+  .navbar-burger { background: none; border: 0; }
+  .navbar-menu.is-active .navbar-dropdown { display: block; }
+  .figure-dialog { padding: 1rem; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
