@@ -1,0 +1,11 @@
+torch>=2.2
+torchvision
+numpy
+scipy
+transformers
+datasets
+pillow
+matplotlib
+pandas
+seaborn
+tqdm

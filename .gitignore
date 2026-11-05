@@ -1,0 +1,83 @@
+.DS_Store
+
+# Python bytecode/cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Tooling/test caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Logs and temporary files
+*.log
+*.tmp
+tmp/
+*.zip
+# LaTeX build artifacts
+*.aux
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.toc
+*.nav
+*.out
+*.bbl
+*.blg
+# Local training artifacts
+checkpoints*/
+results/
+# CocoIndex Code (ccc)
+/.cocoindex_code/
+
+# Local datasets / large archives
+data/
+*.tgz
+
+# Private manuscripts and internal review material
+SSMProbe/paper/
+papers/
+rebuttal/
+reviews/
+private/
+backups/
+*.bundle
+
+# Credentials, environment files, and machine configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+*service-account*.json
+.vscode/
+.idea/
+.ssh/
+.netrc
+.pypirc
+
+# Experiment records and generated outputs
+logs/
+runs/
+wandb/
+lightning_logs/
+outputs/
+artifacts/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.npz
+events.out.tfevents.*
+
+# Website dependencies/builds if copied into this checkout
+node_modules/
+dist/

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "torch-s4"
+version = "0.1.0"
+description = "Trainable parallel S4 layers with HiPPO initialization and regularization"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["torch_s4"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
