@@ -1,0 +1,33 @@
+[
+  {
+    "asset": "evidence-routes.png",
+    "source": "figures/rebuttal_route_overlays/cub_route_opening.pdf",
+    "arxiv_version": "2605.00915v3",
+    "source_sha256": "e58123cfc47c5ee47081fa69e08c520d8c09539ccfed5949e37ab6e065b8d779",
+    "asset_sha256": "34f3315d3ba2e70bf3e8f4a86a43d8ad66a59fcfa2049f7e03faeab6e3b00ba7",
+    "transform": "Poppler pdftoppm PNG rasterization; longest edge 2400px; no content edits"
+  },
+  {
+    "asset": "route-attention-2x4.png",
+    "source": "Author-provided updated two-row, four-column comparison, 2026-11-05",
+    "source_sha256": "b6ecfe1193ee772d4662ccf42662be77d5fde8925474789cdba353244014c246",
+    "asset_sha256": "b6ecfe1193ee772d4662ccf42662be77d5fde8925474789cdba353244014c246",
+    "transform": "none; supplied PNG copied without image edits"
+  },
+  {
+    "asset": "token-sensitivity.png",
+    "source": "figures/token_sensitivity/combo_drop_curves_source_aligned.pdf",
+    "arxiv_version": "2605.00915v3",
+    "source_sha256": "c6800c2cc42aa4fb1695a44606707ffe9c46c3d1285730ef14f24c80e4a57df5",
+    "asset_sha256": "9ea30bcd0f3837be846615040f25d674341c0a040a84855df1f303c0ccccfb8d",
+    "transform": "Poppler pdftoppm PNG rasterization; longest edge 2000px; no content edits"
+  },
+  {
+    "asset": "permutation-matrices.png",
+    "source": "figures/permutation_matrices.pdf",
+    "arxiv_version": "2605.00915v3",
+    "source_sha256": "01e9b369afed47e6442fc94492a286109b6a22e70bde3033cf1cedb7693b81b1",
+    "asset_sha256": "6ab2ea23abff45a5b320a1c6895fe8fb6acc0700215ab8555c6441139383d82d",
+    "transform": "Poppler pdftoppm PNG rasterization; longest edge 2000px; no content edits"
+  }
+]
